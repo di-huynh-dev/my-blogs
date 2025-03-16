@@ -9,9 +9,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
       <Sidebar />
       <div className="flex-1">
         <Header />
-
         <main className="p-6">{children}</main>
-        <Footer />
       </div>
     </div>
   );
