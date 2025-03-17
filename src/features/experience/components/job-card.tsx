@@ -15,26 +15,28 @@ interface JobProps {
   companyName: string;
   date: string;
   description: string;
-  contactName: string;
-  contactEmail: string;
+  contactName?: string;
+  contactEmail?: string;
+  companyLogo: string;
+  site: string;
+  techStack: string[];
 }
 export default function JobCard({
   jobTitle,
   companyName,
+  companyLogo,
   date,
+  site,
   description,
   contactName,
   contactEmail,
+  techStack
 }: JobProps) {
   return (
-    <Card className="max-w-lg border border-gray-200 shadow-md rounded-xl my-2">
+    <Card className="border border-gray-200 shadow-md rounded-xl my-2">
       <CardHeader>
         <div className="flex items-center gap-2">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCVe2Ba2ZpoMYObVGK_9i8mL3A0EQ5Jh2bPw&s"
-            alt="Estuary Logo"
-            className="w-6 h-6"
-          />
+          <img src={companyLogo} alt="Estuary Logo" className="w-10 h-10" />
           <div>
             <CardTitle className="text-lg">{jobTitle}</CardTitle>
             <CardDescription className="text-gray-600 text-sm">
@@ -48,9 +50,19 @@ export default function JobCard({
           <Calendar className="w-4 h-4 mr-1" />
           <span>{date}</span>
         </div>
-        <p className=" text-sm">{description}</p>
+        <p className="text-sm ">{description}</p>
+        <div className="flex flex-wrap gap-2 mt-2">
+          {techStack.map((tech, index) => (
+            <span
+              key={index}
+              className="bg-gray-200 text-gray-600 px-2 py-1 rounded-full text-xs"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
         <Button variant="link" className="mt-2 text-blue-600" asChild>
-          <a href="https://estuary.com" target="_blank">
+          <a href={site} target="_blank">
             Visit Company Site <ExternalLink className="w-4 h-4 ml-1" />
           </a>
         </Button>

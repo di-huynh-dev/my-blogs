@@ -16,9 +16,9 @@ const rubik = Rubik({
 });
 
 export const metadata: Metadata = {
-  title: "Ji Huynh - Front-end Developer",
+  title: "Huynh Tien Di- Front-end Developer",
   description:
-    "Ji Huynh - A passionate Front-end Developer from Ho Chi Minh City, Viet Nam",
+    "Huynh Tien Di - A passionate Front-end Developer from Ho Chi Minh City, Viet Nam",
 };
 
 export default function RootLayout({

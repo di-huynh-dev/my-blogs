@@ -6,7 +6,7 @@ import React from "react";
 
 const SkillsCard = () => {
   return (
-    <div className="mt-10">
+    <div className="mt-4">
       <Card>
         <CardHeader>
           <h2 className="text-lg font-semibold">Technical Skills</h2>

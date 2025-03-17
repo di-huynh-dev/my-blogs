@@ -1,10 +1,10 @@
 "use client";
+import { portfolioConfig } from "@/config/config";
 import { cn } from "@/lib/utils";
-import { Facebook, Linkedin, ExternalLink, Github } from "lucide-react";
-import { buttonVariants } from "./ui/button";
+import { Facebook, Github, Linkedin } from "lucide-react";
 import Link from "next/link";
 import FramerWrapper from "./animation/FramerWrapper";
-import { portfolioConfig } from "@/config/config";
+import { buttonVariants } from "./ui/button";
 
 const SocialLinks = () => {
   const links = [
@@ -24,11 +24,7 @@ const SocialLinks = () => {
       link: portfolioConfig.socialLinks.github,
       icon: <Github />,
     },
-    {
-      name: "External",
-      link: portfolioConfig.socialLinks.external,
-      icon: <ExternalLink />,
-    },
+   
   ];
   return (
     <>
