@@ -36,7 +36,7 @@ type DockProps = {
 };
 type DockItemProps = {
   className?: string;
-  children: React.ReactNode;
+  children: React.ReactElement<{ width?: MotionValue<number>; isHovered?: MotionValue<number> }>;
 };
 type DockLabelProps = {
   className?: string;
@@ -160,7 +160,7 @@ function DockItem({ children, className }: DockItemProps) {
       aria-haspopup="true"
     >
       {Children.map(children, (child) =>
-        cloneElement(child as React.ReactElement, { width, isHovered })
+        cloneElement(child as React.ReactElement<any>, { width, isHovered })
       )}
     </motion.div>
   );
@@ -172,6 +172,7 @@ function DockLabel({ children, className, ...rest }: DockLabelProps) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+     if (!isHovered) return;
     const unsubscribe = isHovered.on("change", (latest) => {
       setIsVisible(latest === 1);
     });
@@ -203,7 +204,7 @@ function DockLabel({ children, className, ...rest }: DockLabelProps) {
 
 function DockIcon({ children, className, ...rest }: DockIconProps) {
   const restProps = rest as Record<string, unknown>;
-  const width = restProps["width"] as MotionValue<number>;
+   const width = (restProps["width"] as MotionValue<number>) ?? useMotionValue(40);
 
   const widthTransform = useTransform(width, (val) => val / 2);
 
