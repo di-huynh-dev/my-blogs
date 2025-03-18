@@ -10,10 +10,11 @@ const InformationCard = () => {
       y={0}
       x={-130}
     >
-      <div className="grid md:grid-cols-2 gap-4">
+      <section id="home"><div className="grid md:grid-cols-2 gap-4">
         <CardInfo />
         <CardAboutMe />
-      </div>
+      </div></section>
+ 
     </FramerWrapper>
   );
 };

@@ -2,13 +2,12 @@
 import { cn } from "@/lib/utils";
 
 import {
+  BriefcaseBusiness,
   FolderGit2,
   GraduationCap,
   HomeIcon,
   LightbulbIcon,
   Mail,
-  MoreHorizontal,
-  User,
 } from "lucide-react";
 
 import {
@@ -27,35 +26,42 @@ const Navbar = () => {
     {
       title: "Home",
       icon: <HomeIcon className="h-full w-full " />,
-      href: "/",
-    },
-    {
-      title: "About",
-      icon: <User className="h-full w-full " />,
-      href: "/about",
+      href: "home",
     },
     {
       title: "Skills",
       icon: <LightbulbIcon className="h-full w-full " />,
-      href: "/skills",
+      href: "skills",
     },
     {
-      title: "Education",
-      icon: <GraduationCap className="h-full w-full " />,
-      href: "/education",
+      title: "Work Experience",
+      icon: <BriefcaseBusiness className="h-full w-full " />,
+      href: "experience",
     },
     {
       title: "Projects",
       icon: <FolderGit2 className="h-full w-full " />,
-      href: "/projects",
+      href: "projects",
     },
-
+    {
+      title: "Education",
+      icon: <GraduationCap className="h-full w-full " />,
+      href: "education",
+    },
     {
       title: "Contact me",
       icon: <Mail className="h-full w-full " />,
-      href: "/contact",
+      href: "contact",
     },
   ];
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const [scrolling, setScrolling] = useState(false);
   const pathname = usePathname();
 
@@ -83,22 +89,22 @@ const Navbar = () => {
     >
       <Dock className="items-end pb-3 rounded-full">
         {data.map((item, idx) => (
-          <Link href={item.href} key={idx}>
+          <button key={idx} onClick={() => scrollToSection(item.href)}>
             <DockItem
               className={cn(
                 "aspect-square rounded-full bg-gray-200 dark:bg-neutral-800",
-                pathname === item.href &&
+                pathname === `/#${item.href}` &&
                   " bg-gray-100 !border !border-primary-sky"
               )}
             >
               <DockLabel>{item.title}</DockLabel>
               <DockIcon
-                className={cn(pathname === item.href && "text-[#2f7df4]")}
+                className={cn(pathname === `/#${item.href}` && "text-[#2f7df4]")}
               >
                 {item.icon}
               </DockIcon>
             </DockItem>
-          </Link>
+          </button>
         ))}
       </Dock>
     </div>

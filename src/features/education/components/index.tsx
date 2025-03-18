@@ -3,6 +3,7 @@ import React from 'react'
 
 const EducationCard = () => {
   return (
+  <section id='education'>
     <Card className='mt-4'>
       <CardHeader>
         <h2 className="text-lg font-semibold">Education</h2>
@@ -20,7 +21,7 @@ const EducationCard = () => {
           </div>
         </div>
       </CardContent>
-    </Card>
+    </Card></section>
   )
 }
 

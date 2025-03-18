@@ -4,6 +4,7 @@ import JobCard from './components/job-card';
 
 const ExperienceCard = () => {
   return (
+   <section id='experience'>
     <Card className='mt-4'>
       <CardHeader>
         <h2 className="text-lg font-semibold">Work Experience</h2>
@@ -41,7 +42,7 @@ const ExperienceCard = () => {
           />
         </div>
       </CardContent>
-    </Card>
+    </Card></section>
   );
 };
 

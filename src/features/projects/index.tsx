@@ -4,6 +4,7 @@ import ProjectCard from './components/card'
 
 const ProjectsCard = () => {
   return (
+  <section id='projects'>
     <Card className='mt-3'>
         <CardHeader>
           <h2 className="text-lg font-semibold">Projects</h2>
@@ -42,7 +43,7 @@ Document Sharing Application" timeline='Jan 2024 - Jul 2024' description='Build 
     'Tanstack Query',
     ]} />    
         </CardContent>
-    </Card>
+    </Card></section>
   )
 }
 

@@ -6,7 +6,7 @@ import React from "react";
 
 const SkillsCard = () => {
   return (
-    <div className="mt-4">
+    <section className="mt-4" id="skills">
       <Card>
         <CardHeader>
           <h2 className="text-lg font-semibold">Technical Skills</h2>
@@ -53,7 +53,7 @@ const SkillsCard = () => {
           </>
         </CardContent>
       </Card>
-    </div>
+    </section>
   );
 };
 
