@@ -1,17 +1,18 @@
+import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import React from 'react'
 
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm px-4">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center my-2 mx-2">
         <div className="flex gap-2 items-center">
-          <img src="/vietnam.png" alt="" />
-          <span className="font-semibold md:block hidden">Code For Life</span>
+          <img src="./logo.ico" alt="Logo" />
+          <span className="font-semibold text-sm md:text-base hidden md:block">Code For Life</span>
         </div>
         <div className="relative">
           <Input
-            className="w-100 rounded-full pl-10"
+            className="md:w-100 w-40 text-sm rounded-full pl-10"
             placeholder="Tìm kiếm nội dung, bài viết..."
           />
           <svg
@@ -31,7 +32,7 @@ const Header = () => {
             />
           </svg>
         </div>
-        <div></div>
+        <div><Button className='rounded-full'>Đăng nhập</Button></div>
       </div>
     </header>
   )
