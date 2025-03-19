@@ -84,14 +84,16 @@ const Navbar = () => {
                   ' bg-gray-100 !border !border-primary-sky'
               )}
             >
-              <DockLabel>{item.title}</DockLabel>
-              <DockIcon
-                className={cn(
-                  pathname === `/#${item.href}` && 'text-[#2f7df4]'
-                )}
-              >
-                {item.icon}
-              </DockIcon>
+              <div key={idx}>
+                <DockLabel>{item.title}</DockLabel>
+                <DockIcon
+                  className={cn(
+                    pathname === `/#${item.href}` && 'text-[#2f7df4]'
+                  )}
+                >
+                  {item.icon}
+                </DockIcon>
+              </div>
             </DockItem>
           </button>
         ))}

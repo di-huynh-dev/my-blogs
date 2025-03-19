@@ -159,9 +159,12 @@ function DockItem({ children, className }: DockItemProps) {
       role="button"
       aria-haspopup="true"
     >
-      {Children.map(children, (child) =>
-        cloneElement(child as React.ReactElement<any>, { width, isHovered })
-      )}
+    {Children.map(children, (child) =>
+  typeof child.type === "string" 
+    ? cloneElement(child, { width })
+    : cloneElement(child, { width, isHovered })
+)}
+
     </motion.div>
   );
 }
