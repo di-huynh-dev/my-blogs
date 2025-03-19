@@ -1,7 +1,7 @@
 export const portfolioConfig = {
   // Basic Information
   name: 'Huỳnh Tiến Dĩ',
-  title: 'Front-end Developer',
+  title: 'Huynh Tien Di - Front-end Developer',
   description: 'I am a Passionate Front-end Developer',
   location: 'Ramgarh cantt, Jharkhand, India',
 
