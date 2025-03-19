@@ -18,7 +18,6 @@ export const metadata: Metadata = {
   title: "Huynh Tien Di- Front-end Developer",
   description:
     "Huynh Tien Di - A passionate Front-end Developer from Ho Chi Minh City, Viet Nam",
-  image: "/images/avatar.jpg",
 };
 
 export default function RootLayout({
