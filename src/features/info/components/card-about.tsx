@@ -1,13 +1,7 @@
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import {
-  LanguagesIcon,
-  MarsIcon,
-  PersonStandingIcon,
-  TransgenderIcon,
-  WholeWordIcon,
-} from "lucide-react";
-import Image from "next/image";
-import React from "react";
+import { Card, CardContent, CardHeader } from '@/components/ui/card'
+import { LanguagesIcon, MarsIcon } from 'lucide-react'
+import Image from 'next/image'
+import React from 'react'
 
 const CardAboutMe = () => {
   return (
@@ -51,7 +45,7 @@ const CardAboutMe = () => {
         </p>
       </CardContent>
     </Card>
-  );
-};
+  )
+}
 
-export default CardAboutMe;
+export default CardAboutMe

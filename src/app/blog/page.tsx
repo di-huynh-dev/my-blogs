@@ -1,4 +1,4 @@
-import PostCard from '@/components/post-card/post-card'
+import PostCard from '@/features/blog/components/post-card'
 import FieldTag from '@/components/tag/field-tag'
 import {
   Pagination,
@@ -23,6 +23,7 @@ const Blog = () => {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo.',
       tags: ['ReactJS', 'NextJS', 'TailwindCSS'],
       date: '2 tháng trước',
+      slug: 'huong-dan-tu-hoc-lap-trinh-web',
       duration: 5
     },
     {
@@ -35,6 +36,7 @@ const Blog = () => {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo.',
       tags: ['ReactJS', 'NextJS', 'TailwindCSS'],
       date: '2 tháng trước',
+      slug: 'huong-dan-tu-hoc-lap-trinh-web',
       duration: 5
     },
     {
@@ -47,6 +49,7 @@ const Blog = () => {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo.',
       tags: ['ReactJS', 'NextJS', 'TailwindCSS'],
       date: '2 tháng trước',
+      slug: 'huong-dan-tu-hoc-lap-trinh-web',
       duration: 5
     },
     {
@@ -59,6 +62,7 @@ const Blog = () => {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo.',
       tags: ['ReactJS', 'NextJS', 'TailwindCSS'],
       date: '2 tháng trước',
+      slug: 'huong-dan-tu-hoc-lap-trinh-web',
       duration: 5
     },
     {
@@ -71,6 +75,7 @@ const Blog = () => {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo.',
       tags: ['ReactJS', 'NextJS', 'TailwindCSS'],
       date: '2 tháng trước',
+      slug: 'huong-dan-tu-hoc-lap-trinh-web',
       duration: 5
     },
     {
@@ -83,6 +88,7 @@ const Blog = () => {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo.',
       tags: ['ReactJS', 'NextJS', 'TailwindCSS'],
       date: '2 tháng trước',
+      slug: 'huong-dan-tu-hoc-lap-trinh-web',
       duration: 5
     },
 
@@ -96,6 +102,7 @@ const Blog = () => {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo.',
       tags: ['ReactJS', 'NextJS', 'TailwindCSS'],
       date: '2 tháng trước',
+      slug: 'huong-dan-tu-hoc-lap-trinh-web',
       duration: 5
     }
   ]
@@ -121,6 +128,7 @@ const Blog = () => {
             key={index}
             user={card.user}
             tittle={card.tittle}
+            slug={card.slug}
             content={card.content}
             tags={card.tags}
             date={card.date}

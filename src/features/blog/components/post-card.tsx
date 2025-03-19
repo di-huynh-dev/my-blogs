@@ -1,5 +1,10 @@
 import React from 'react'
-import { Card, CardContent, CardFooter, CardHeader } from '../ui/card'
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader
+} from '../../../components/ui/card'
 import { Bookmark, Copy, EllipsisVertical, Share } from 'lucide-react'
 import {
   DropdownMenu,
@@ -7,8 +12,9 @@ import {
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuTrigger
-} from '../ui/dropdown-menu'
-import FieldTag from '../tag/field-tag'
+} from '../../../components/ui/dropdown-menu'
+import FieldTag from '../../../components/tag/field-tag'
+import Link from 'next/link'
 
 type PostCardProps = {
   user: {
@@ -17,6 +23,7 @@ type PostCardProps = {
   }
   tittle: string
   content: string
+  slug: string
   tags: string[]
   date: string
   duration: number
@@ -26,6 +33,7 @@ const PostCard = ({
   user,
   tittle,
   content,
+  slug,
   tags,
   date,
   duration
@@ -66,7 +74,9 @@ const PostCard = ({
             </DropdownMenu>
           </div>
         </div>
-        <h2 className="text-xl font-semibold">{tittle}</h2>
+        <Link href={`/blog/${slug}`} className="text-xl font-semibold">
+          {tittle}
+        </Link>
         <p className="text-muted-foreground mt-2">{content}</p>
         <div className="grid lg:grid-cols-5 grid-cols-2 gap-2 mt-4">
           {tags.map((tag, index) => (
