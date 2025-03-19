@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /private/
+
+Sitemap: https://di-huynh-blogs.vercel.app/sitemap.xlm
