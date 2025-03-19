@@ -1,25 +1,25 @@
-"use client";
+'use client'
 
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
-  CardDescription,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Mail, Calendar, ExternalLink } from "lucide-react";
+  CardDescription
+} from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Mail, Calendar, ExternalLink } from 'lucide-react'
 
 interface JobProps {
-  jobTitle: string;
-  companyName: string;
-  date: string;
-  description: string;
-  contactName?: string;
-  contactEmail?: string;
-  companyLogo: string;
-  site: string;
-  techStack: string[];
+  jobTitle: string
+  companyName: string
+  date: string
+  description: string
+  contactName?: string
+  contactEmail?: string
+  companyLogo: string
+  site: string
+  techStack: string[]
 }
 export default function JobCard({
   jobTitle,
@@ -40,7 +40,7 @@ export default function JobCard({
           <div>
             <CardTitle className="text-lg">{jobTitle}</CardTitle>
             <CardDescription className="text-gray-600 text-sm">
-              {companyName}
+              <h3>{companyName}</h3>
             </CardDescription>
           </div>
         </div>
@@ -53,12 +53,12 @@ export default function JobCard({
         <p className="text-sm ">{description}</p>
         <div className="flex flex-wrap gap-2 mt-2">
           {techStack.map((tech, index) => (
-            <span
+            <h3
               key={index}
               className="bg-gray-200 text-gray-600 px-2 py-1 rounded-full text-xs"
             >
               {tech}
-            </span>
+            </h3>
           ))}
         </div>
         <Button variant="link" className="mt-2 text-blue-600" asChild>
@@ -80,5 +80,5 @@ export default function JobCard({
         </div>
       </CardContent>
     </Card>
-  );
+  )
 }

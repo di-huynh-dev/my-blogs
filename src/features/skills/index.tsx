@@ -1,8 +1,8 @@
-import FramerWrapper from "@/components/animation/FramerWrapper";
-import SkillsFooter from "@/components/animation/SkillFooter";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { portfolioConfig } from "@/config/config";
-import React from "react";
+import FramerWrapper from '@/components/animation/FramerWrapper'
+import SkillsFooter from '@/components/animation/SkillFooter'
+import { Card, CardContent, CardHeader } from '@/components/ui/card'
+import { portfolioConfig } from '@/config/config'
+import React from 'react'
 
 const SkillsCard = () => {
   return (
@@ -10,6 +10,10 @@ const SkillsCard = () => {
       <Card>
         <CardHeader>
           <h2 className="text-lg font-semibold">Technical Skills</h2>
+          <h3>
+            Knowledgeable in both Backend and Frontend, but primarily focused on
+            Frontend
+          </h3>
         </CardHeader>
         <CardContent>
           <>
@@ -54,7 +58,7 @@ const SkillsCard = () => {
         </CardContent>
       </Card>
     </section>
-  );
-};
+  )
+}
 
-export default SkillsCard;
+export default SkillsCard

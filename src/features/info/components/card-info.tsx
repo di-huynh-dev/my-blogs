@@ -11,7 +11,7 @@ const CardInfo = () => {
     <Card>
       <CardContent>
         <HeroText />
-        <TextMotion text={portfolioConfig.description} />
+        <TextMotion text={portfolioConfig.title} />
         <div className="h-fit w-full p-4 flex gap-4">
           <SocialLinks />
         </div>

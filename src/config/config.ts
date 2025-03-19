@@ -2,8 +2,9 @@ export const portfolioConfig = {
   // Basic Information
   name: 'Huỳnh Tiến Dĩ',
   title: 'Huynh Tien Di - Front-end Developer',
-  description: 'I am a Passionate Front-end Developer',
-  location: 'Ramgarh cantt, Jharkhand, India',
+  description:
+    'I am a Passionate Front-end Developer. I love to build web projects and contribute to Front-end communities. I specialize in React.js, Next.js,TailwindCSS and modern web technologies. Passionate about building fast, responsive, and user-friendly web applications. I am always open to learning new technologies and frameworks to improve my skills and knowledge.',
+  location: 'Ho Chi Minh City, Viet Nam',
 
   // Contact Information
   email: 'dihuynhdev.contact@gmail.com',
