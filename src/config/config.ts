@@ -17,8 +17,8 @@ export const portfolioConfig = {
 
   // SEO Information
   seo: {
-    ogImage: 'https://mdtaquiimam.vercel.app/og-image.png',
-    url: 'https://mdtaquiimam.vercel.app',
+    ogImage: 'https://di-huynh-blogs.vercel.app/logo.ico',
+    url: 'https://di-huynh-blogs.vercel.app/blog',
     twitterHandle: '@Taquiimam14',
     keywords: [
       'tien di',
