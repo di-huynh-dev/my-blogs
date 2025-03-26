@@ -1,7 +1,8 @@
 export const portfolioConfig = {
   // Basic Information
   name: 'Huỳnh Tiến Dĩ',
-  title: 'Huynh Tien Di - Front-end Developer | React & Next.js',
+  title: 'Huynh Tien Di -  Front-end Developer | React & Next.js',
+  subTitle: 'I am a Front-end Developer | React & Next.js',
   description:
     'Huynh Tien Di - Front-end Developer skilled in React.js, Next.js. Building fast, SEO-friendly websites with modern web technologies.',
   location: 'Ho Chi Minh City, Viet Nam',

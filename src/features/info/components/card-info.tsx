@@ -21,7 +21,7 @@ const CardInfo = () => {
             color: 'transparent'
           }}
         >
-          {portfolioConfig.title}
+          {portfolioConfig.subTitle}
         </TypingAnimation>
         <div className="h-fit w-full p-4 flex gap-4">
           <SocialLinks />
