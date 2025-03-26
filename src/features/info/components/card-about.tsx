@@ -7,7 +7,7 @@ import React from 'react'
 
 const CardAboutMe = () => {
   return (
-    <Card className="relative">
+    <Card className="relative overflow-hidden">
       <BorderBeam duration={8} size={200} />
       <CardHeader>
         <div className="flex justify-between">

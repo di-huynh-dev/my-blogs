@@ -1,5 +1,6 @@
 import FramerWrapper from '@/components/animation/FramerWrapper'
 import SkillsFooter from '@/components/animation/SkillFooter'
+import { BorderBeam } from '@/components/magicui/border-beam'
 import { IconCloudDemo } from '@/components/magicui/tech-earth'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { portfolioConfig } from '@/config/config'
@@ -7,8 +8,9 @@ import React from 'react'
 
 const SkillsCard = () => {
   return (
-    <section className="mt-4" id="skills">
-      <Card>
+    <section id="skills">
+      <Card className="mt-4 relative overflow-hidden">
+        <BorderBeam duration={8} size={200} />
         <CardHeader>
           <h2 className="text-lg font-semibold">Technical Skills</h2>
           <h3>

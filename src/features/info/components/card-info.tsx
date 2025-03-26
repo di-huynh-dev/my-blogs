@@ -8,7 +8,7 @@ import { portfolioConfig } from '@/config/config'
 
 const CardInfo = () => {
   return (
-    <Card className="relative">
+    <Card className="relative overflow-hidden">
       <CardContent>
         <HeroText />
         <TypingAnimation

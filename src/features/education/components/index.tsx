@@ -1,3 +1,4 @@
+import { BorderBeam } from '@/components/magicui/border-beam'
 import {
   Card,
   CardContent,
@@ -10,7 +11,8 @@ import React from 'react'
 const EducationCard = () => {
   return (
     <section id="education">
-      <Card className="mt-4">
+      <Card className="mt-4 relative overflow-hidden">
+        <BorderBeam duration={8} size={200} />
         <CardHeader>
           <h2 className="text-lg font-semibold">Education</h2>
         </CardHeader>
