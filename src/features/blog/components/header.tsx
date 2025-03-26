@@ -1,14 +1,17 @@
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
+import Link from 'next/link'
 import React from 'react'
 
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm px-4">
-      <div className="flex justify-between items-center my-2 mx-2">
+      <Link href={'/'} className="flex justify-between items-center my-2 mx-2">
         <div className="flex gap-2 items-center">
           <img src="./logo.ico" alt="Logo" />
-          <span className="font-semibold text-sm md:text-base hidden md:block">Code For Life</span>
+          <span className="font-semibold text-sm md:text-base hidden md:block">
+            Code For Life
+          </span>
         </div>
         <div className="relative">
           <Input
@@ -32,8 +35,10 @@ const Header = () => {
             />
           </svg>
         </div>
-        <div><Button className='rounded-full'>Đăng nhập</Button></div>
-      </div>
+        <div>
+          <Button className="rounded-full">Đăng nhập</Button>
+        </div>
+      </Link>
     </header>
   )
 }

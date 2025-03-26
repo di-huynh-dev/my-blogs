@@ -1,3 +1,5 @@
+import { BorderBeam } from '@/components/magicui/border-beam'
+import { IconCloudDemo } from '@/components/magicui/tech-earth'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { LanguagesIcon, MarsIcon } from 'lucide-react'
 import Image from 'next/image'
@@ -5,7 +7,8 @@ import React from 'react'
 
 const CardAboutMe = () => {
   return (
-    <Card>
+    <Card className="relative">
+      <BorderBeam duration={8} size={200} />
       <CardHeader>
         <div className="flex justify-between">
           <div>

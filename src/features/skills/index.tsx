@@ -1,5 +1,6 @@
 import FramerWrapper from '@/components/animation/FramerWrapper'
 import SkillsFooter from '@/components/animation/SkillFooter'
+import { IconCloudDemo } from '@/components/magicui/tech-earth'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { portfolioConfig } from '@/config/config'
 import React from 'react'
@@ -14,6 +15,7 @@ const SkillsCard = () => {
             Knowledgeable in both Backend and Frontend, but primarily focused on
             Frontend
           </h3>
+          <IconCloudDemo />
         </CardHeader>
         <CardContent>
           <>

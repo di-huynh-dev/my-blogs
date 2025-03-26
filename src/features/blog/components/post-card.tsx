@@ -15,6 +15,7 @@ import {
 } from '../../../components/ui/dropdown-menu'
 import FieldTag from '../../../components/tag/field-tag'
 import Link from 'next/link'
+import { BorderBeam } from '@/components/magicui/border-beam'
 
 type PostCardProps = {
   user: {
@@ -39,7 +40,7 @@ const PostCard = ({
   duration
 }: PostCardProps) => {
   return (
-    <Card className="mb-2">
+    <Card className="relative overflow-hidden">
       <CardHeader>
         <div className="flex justify-between">
           <div className="flex items-center gap-2">
@@ -84,6 +85,7 @@ const PostCard = ({
           ))}
         </div>
       </CardHeader>
+      <BorderBeam duration={8} size={100} />
     </Card>
   )
 }

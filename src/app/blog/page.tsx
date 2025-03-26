@@ -1,4 +1,3 @@
-import PostCard from '@/features/blog/components/post-card'
 import FieldTag from '@/components/tag/field-tag'
 import {
   Pagination,
@@ -9,7 +8,7 @@ import {
   PaginationNext,
   PaginationPrevious
 } from '@/components/ui/pagination'
-import React from 'react'
+import PostCard from '@/features/blog/components/post-card'
 
 const Blog = () => {
   const cards = [

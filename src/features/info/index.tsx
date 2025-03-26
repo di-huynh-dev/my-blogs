@@ -1,7 +1,7 @@
-import FramerWrapper from "@/components/animation/FramerWrapper";
-import React from "react";
-import CardInfo from "./components/card-info";
-import CardAboutMe from "./components/card-about";
+import FramerWrapper from '@/components/animation/FramerWrapper'
+import React from 'react'
+import CardInfo from './components/card-info'
+import CardAboutMe from './components/card-about'
 
 const InformationCard = () => {
   return (
@@ -10,13 +10,14 @@ const InformationCard = () => {
       y={0}
       x={-130}
     >
-      <section id="home"><div className="grid md:grid-cols-2 gap-4">
-        <CardInfo />
-        <CardAboutMe />
-      </div></section>
- 
+      <section id="home">
+        <div className="grid md:grid-cols-2 gap-4">
+          <CardInfo />
+          <CardAboutMe />
+        </div>
+      </section>
     </FramerWrapper>
-  );
-};
+  )
+}
 
-export default InformationCard;
+export default InformationCard
